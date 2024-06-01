@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ececec;
+    font-family: "Poppins", sans-serif;
+    /* color: white; */
+}
+nav{
+    padding: 0 20px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+main{
+    padding: 20px 250px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+main .secondPara{
+    font-size: 20px;
+}
+.container{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 20vh;
+}
+.box{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+    filter: drop-shadow(11px 20px 21px rgb(164, 164, 164));
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.texts{
+    font-size: 20px;
+    padding: 50px;
+    padding-top: 150px;
+}
+.texts .title{
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 22px;
+}
+li{
+    list-style-position: inside;
+}
+.des{
+    text-align: justify;
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        padding: 20px 30px;
+    }
+}
+@media screen and (max-width: 600px) {
+    nav{
+        height: 6vh;
+        padding: 0 10px;
+    }
+    .container{
+        align-items: start;
+        flex-wrap: wrap;
+        padding: 0 7px;
+        height: 30vh;
+    }
+    .box{
+        /* width: 30vw; */
+    }
+    main{
+        /* display: none; */
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        padding: 20px 20px;
+    }
+    main .secondPara{
+        display: none;
+    }
+    .texts{
+        font-size: 14px;
+        padding: 40px 15px 0px 15px;
+    }
+    .texts .objectives{
+        display: none;
+    }
+    .texts .title{
+        padding-top: 10px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    li{
+        list-style-position: inside;
+    }
+    .des{
+        text-align: justify;
+    }
+}

@@ -6,7 +6,6 @@
 body{
     background-color: #ececec;
     font-family: "Poppins", sans-serif;
-    /* color: white; */
 }
 nav{
     padding: 0 20px;
@@ -41,10 +40,9 @@ main .secondPara{
     justify-content: center;
     width: 100px;
     height: 100px;
-    /* border: 1px solid white; */
     border-radius: 20px;
     filter: drop-shadow(11px 20px 21px rgb(164, 164, 164));
-    /* border: 1px solid rgb(255, 255, 255); */
+    z-index: 10;
 }
 
 .texts{
@@ -80,11 +78,7 @@ li{
         padding: 0 7px;
         height: 30vh;
     }
-    .box{
-        /* width: 30vw; */
-    }
     main{
-        /* display: none; */
         font-size: 20px;
         text-align: center;
         font-weight: 400;

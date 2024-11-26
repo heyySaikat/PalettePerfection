@@ -6,22 +6,10 @@ const colors= {
     5:"#9932CC"
 };
 
-let c1 = Math.ceil(Math.random() * 5) 
+const container = document.body.getElementsByClassName("container")[0];
+const childNodes = container.childNodes;
 
-console.log(document.body.getElementsByClassName("container")[0].childNodes[1].style.background=`${colors[c1]}`)
-
-let c2 = Math.ceil(Math.random() * 5) 
-
-document.body.getElementsByClassName("container")[0].childNodes[3].style.background=`${colors[c2]}`
-
-let c3 = Math.ceil(Math.random() * 5) 
-
-document.body.getElementsByClassName("container")[0].childNodes[5].style.background=`${colors[c3]}`
-
-let c4 = Math.ceil(Math.random() * 5) 
-
-document.body.getElementsByClassName("container")[0].childNodes[7].style.background=`${colors[c4]}`
-
-let c5 = Math.ceil(Math.random() * 5) 
-
-document.body.getElementsByClassName("container")[0].childNodes[9].style.background=`${colors[c5]}`
+for (let i = 1; i < 10; i += 2) {
+    let randomIndex = Math.ceil(Math.random() * 5);
+    childNodes[i].style.background = colors[randomIndex];
+}
